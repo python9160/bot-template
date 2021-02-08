@@ -36,3 +36,12 @@ else if (mes === 'command-name') {
   msg.channel.send(new Date())
 }
 ```
+#
+# Default prefix
+
+The default prefix is `b!` but it can be changed at index.js:5. The following changes the prefix to `b/`.
+
+```js
+const prefix = 'b/'
+```
+#
