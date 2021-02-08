@@ -9,7 +9,7 @@ BOT_TOKEN=secret token
 #
 Replace "secret token" with the special token generated from the Discord Developer Portal
 #
-# How to add commands
+## How to add commands
 Go to index.js:17:4, and add an `else if` statement. There are two different ways of making a command.
 #
 The first way will have nothing on the end
@@ -37,7 +37,7 @@ else if (mes === 'command-name') {
 }
 ```
 #
-# Default prefix
+## Default prefix
 
 The default prefix is `b!` but it can be changed at index.js:5. The following changes the prefix to `b/`.
 
