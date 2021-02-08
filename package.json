@@ -1,0 +1,24 @@
+{
+  "name": "bot-template",
+  "version": "1.0.0",
+  "description": "A simple bot template with Discord.js",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "discord.js": "^12.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/python9160/bot-template.git"
+  },
+  "author": "Soumyadeep Das",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/python9160/bot-template/issues"
+  },
+  "homepage": "https://github.com/python9160/bot-template#readme"
+}
