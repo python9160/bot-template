@@ -10,7 +10,7 @@ BOT_TOKEN=secret token
 Replace "secret token" with the special token generated from the Discord Developer Portal
 #
 ## How to add commands
-Go to index.js:17:4, and add an `else if` statement. There are two different ways of making a command.
+Go to the end of the `client.on('message', () => {})` anonymous function, and add an `else if` statement. There are two different ways of making a command.
 #
 The first way will have nothing on the end
 ```js
@@ -45,3 +45,5 @@ The default prefix is `b!` but it can be changed at index.js:5. The following ch
 const prefix = 'b/'
 ```
 #
+
+The full documentation is available [here](https://discord.js.org/#/docs/main/stable/general/welcome).
