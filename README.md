@@ -27,3 +27,12 @@ else if (mes.startsWith('command-name')) {
 }
 ```
 #
+Adding another command can be done by adding another `else if` statement.
+
+```js
+else if (mes === 'command-name') {
+  msg.channel.send('what to send')
+} else if (mes === 'time') {
+  msg.channel.send(new Date())
+}
+```
