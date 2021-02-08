@@ -10,9 +10,9 @@ client.on('ready', () => {
 
 client.on('message', (msg) => {
   if (msg.content.toLowerCase().startsWith(prefix)) {
-    const mess = msg.content.toLowerCase().substring(prefix.length);
+    const mes = msg.content.toLowerCase().substring(prefix.length);
   }
-  if (mess === 'hi') {
+  if (mes === 'hi') {
     msg.channel.send('Hi!')
   }
 });
@@ -22,6 +22,6 @@ if (process.env.BOT_TOKEN === 'bot token here') {
 } else {
   client.login(process.env.BOT_TOKEN)
     .catch((e) => {
-      console.log("Invalid Token\n"+e)
+      console.log("Invalid Token\n" + e)
     })
 }
