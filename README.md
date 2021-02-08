@@ -1,4 +1,4 @@
-# [bot-template]()
+# [bot-template](https://github.com/python9160/bot-template)
 
 A simple bot template for discord.js
 #
