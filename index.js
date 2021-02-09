@@ -15,6 +15,8 @@ client.on('message', (msg) => {
       msg.channel.send('Hi!')
     } else if (client.user.id in msg.mention.members) {
       msg.channel.send('Hello you just pinged me')
+    } else {
+      msg.channel.send(`Sorry, <@${msg.author.id}>, but that command does not exist.`)
     }
   }
 });
