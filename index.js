@@ -1,31 +1,31 @@
-const Discord = require('discord.js')
-const client = new Discord.Client()
-require('dotenv').config()
+const Discord = require('discord.js');
+const client = new Discord.Client();
+require('dotenv').config();
 
-const prefix = 'b!'
+const prefix = 'b!';
 
 client.on('ready', () => {
-  console.log(`Logged on as ${client.user.tag}`)
+  console.log(`Logged on as ${client.user.tag}`);
 });
 
 client.on('message', (msg) => {
   if (msg.content.toLowerCase().startsWith(prefix)) {
     const mes = msg.content.toLowerCase().substring(prefix.length);
     if (mes === 'hi') {
-      msg.channel.send('Hi!')
+      msg.channel.send('Hi!');
     } else if (client.user.id in msg.mention.members) {
-      msg.channel.send('Hello you just pinged me')
+      msg.channel.send('Hello you just pinged me');
     } else {
-      msg.channel.send(`Sorry, <@${msg.author.id}>, but that command does not exist.`)
+      msg.channel.send(`Sorry, <@${msg.author.id}>, but that command does not exist.`);
     }
   }
 });
 
 if (process.env.BOT_TOKEN === 'bot token here') {
-  console.log('Change the Bot token to run the bot')
+  console.log('Change the Bot token to run the bot');
 } else {
   client.login(process.env.BOT_TOKEN)
     .catch((e) => {
-      console.log("Invalid Token\n" + e)
+      console.log("Invalid Token\n" + e);
     })
 }
