@@ -11,11 +11,11 @@ client.on('ready', () => {
 client.on('message', (msg) => {
   if (msg.content.toLowerCase().startsWith(prefix)) {
     const mes = msg.content.toLowerCase().substring(prefix.length);
-  }
-  if (mes === 'hi') {
-    msg.channel.send('Hi!')
-  } else if (client.user.id in msg.mention.members) {
-    msg.channel.send('Hello you just pinged me')
+    if (mes === 'hi') {
+      msg.channel.send('Hi!')
+    } else if (client.user.id in msg.mention.members) {
+      msg.channel.send('Hello you just pinged me')
+    }
   }
 });
 
