@@ -15,7 +15,7 @@ client.on('message', (msg) => {
   if (mes === 'hi') {
     msg.channel.send('Hi!')
   } else if (client.user.id in msg.mention.members) {
-    msg.channel.send('why u ping me')
+    msg.channel.send('Hello you just pinged me')
   }
 });
 
