@@ -26,4 +26,4 @@ if (process.env.BOT_TOKEN === 'bot token here') {
     .catch((e) => {
       console.log("Invalid Token\n" + e)
     })
-}
+} //
