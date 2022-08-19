@@ -1,3 +1,5 @@
+# ⚠️ Archived since I realized the structure was horrible ⚠️
+
 # bot-template
 
 [![bot-template](https://img.shields.io/badge/Bot--template-Github-blue)](https://github.com/python9160/bot-template)
